@@ -5,7 +5,7 @@ ansible_python_interpreter: python
 
 # ACL variables ;
 dcmap_asa_acl_dmz: 'dmz-in'
-dehong_asa_acl_ctas: 'DehongStaffPermit'
+beijing_asa_acl_ctas: 'BeijingStaffPermit'
 
 # IP related ;
 ansible_host: "{{ ip_address }}"

@@ -2,7 +2,7 @@
 - name: Playbook with Roles 
 
 # Use conjunction character & to filter the host you need.
-  hosts: "firewall_cisco,&DEGT"
+  hosts: "firewall_cisco,&Beijing"
 
   gather_facts: false
   connection: network_cli

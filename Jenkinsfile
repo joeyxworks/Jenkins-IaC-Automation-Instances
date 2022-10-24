@@ -4,7 +4,7 @@ pipeline {
   environment {
       VAULT_PASS_FILE = credentials('Ansible_Vault_File')
       URL_DOMAIN_VAR = "github.com"
-      DNS_SERVER_VAR = credentials('DEGT_DNS')
+      DNS_SERVER_VAR = credentials('Beijing_DNS')
       TODAY_DATE_VAR = sh(returnStdout: true, script: 'date +%Y%m%d').trim()
       RECORD_FILE_PATH = "/home/jenkins/Ansible/dns_resolving_records/dns-resolved-${URL_DOMAIN_VAR}-${TODAY_DATE_VAR}.txt"
   }
