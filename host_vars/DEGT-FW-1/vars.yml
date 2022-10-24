@@ -1,0 +1,20 @@
+---
+# Basic variables ;
+ansible_network_os: cisco.asa.asa
+ansible_python_interpreter: python
+
+# ACL variables ;
+dcmap_asa_acl_dmz: 'dmz-in'
+dehong_asa_acl_ctas: 'DehongStaffPermit'
+
+# IP related ;
+ansible_host: "{{ ip_address }}"
+
+# Credential related ;
+ansible_user: "{{ username }}"
+ansible_password: "{{ password }}"
+
+# Uncomment following lines if apply to Dehong ASA firewall
+ansible_become: yes
+ansible_become_method: ansible.netcommon.enable
+ansible_become_pass: "{{ enable_password }}"

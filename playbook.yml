@@ -1,0 +1,13 @@
+---
+- name: Playbook with Roles 
+
+# Use conjunction character & to filter the host you need.
+  hosts: "firewall_cisco,&DEGT"
+
+  gather_facts: false
+  connection: network_cli
+
+  roles:
+    - firewall_cisco
+
+

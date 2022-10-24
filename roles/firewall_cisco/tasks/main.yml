@@ -1,0 +1,6 @@
+---
+- name: ACL config for Dehong
+  cisco.asa.asa_config:
+    lines:
+
+    save_when: changed
