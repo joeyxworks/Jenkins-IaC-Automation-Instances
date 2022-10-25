@@ -2,6 +2,7 @@ pipeline {
     agent {label 'Ansible-CN-40'}
 
   environment {
+      ANSIBLE_HOST_KEY_CHECKING = 'False'
       VAULT_PASS_FILE = credentials('Ansible_Vault_File')
       URL_DOMAIN_VAR = "github.com"
       DNS_SERVER_VAR = credentials('Beijing_DNS')
