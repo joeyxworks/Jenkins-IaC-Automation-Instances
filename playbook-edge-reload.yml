@@ -1,0 +1,12 @@
+---
+- name: Playbook with Roles 
+
+  hosts: "BJ-Edge-Swtich-1"
+
+  gather_facts: false
+  connection: network_cli
+
+  roles:
+    - edge_cisco 
+
+

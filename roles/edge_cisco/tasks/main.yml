@@ -1,0 +1,10 @@
+---
+- name: Restart specific edge switch
+  cisco.ios.ios_command:
+    commands:
+    - command: 'wr'
+    - command: 'reload'
+      prompt:
+        - confirm
+      answer:
+        - y
